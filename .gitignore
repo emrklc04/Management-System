@@ -1,0 +1,44 @@
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.idb
+*.lib
+*.obj
+*.log
+*.tlog
+*.lastbuildstate
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sdf
+*.cache
+*.aps
+*.ncb
+*.opensdf
+*.dbmdl
+
+# Other
+ipch/
+*.sln.docstates
+*.tmp
+*.bak
+
+# CMake or C++ build system temp files (falls später verwendet)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# VS Code (falls du mal parallel VS Code nutzt)
+.vscode/
