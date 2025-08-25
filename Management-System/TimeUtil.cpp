@@ -1,6 +1,7 @@
 #include "TimeUtil.h"
 #include <sstream>
 #include <iomanip>
+#include <iostream>
 
 Time parseHHMM(const std::string& s) {
 	std::istringstream iss(s);
@@ -14,6 +15,18 @@ Time parseHHMM(const std::string& s) {
 	return Time{ h, m };
 }
 
+Date parseDDMMYY(const std::string& d) {
+	std::istringstream iss(d);
+	int day, month, year;
+	char sep;
+
+	if (!(iss >> day >> sep >> month >> sep >> year) || sep != '.' || day < 0 || day > 31 || month < 0 || month > 12 || year > 2025) {
+		throw std::invalid_argument("Datum-Format DD.MM.YY ungueltig: " + d);
+	}
+
+	return Date{ day, month, year };
+}
+
 int duration(const Period& p) {
 	int startMin = p.start.toMinutes();
 	int endMin = p.end.toMinutes();
@@ -23,3 +36,6 @@ int duration(const Period& p) {
 	return endMin - startMin;
 }
 
+void printDate(Date day){
+	std::cout << day.day << "." << day.month << "." << day.year;
+}

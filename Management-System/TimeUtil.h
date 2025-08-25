@@ -21,4 +21,6 @@ struct Date {
 
 Time parseHHMM(const std::string& s); 
 int duration(const Period& p);
+Date parseDDMMYY(const std::string& d);
 
+void printDate(Date day);

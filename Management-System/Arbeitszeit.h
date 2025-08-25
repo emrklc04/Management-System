@@ -6,7 +6,7 @@
 class Arbeitszeit
 {
 public:
-	Arbeitszeit(Period& arbeitszeit);
+	Arbeitszeit(int id, Date day, int mitarbeiterId, Period& arbeitszeit);
 	int nettoMinutes() const;
 
 private:

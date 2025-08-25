@@ -1,7 +1,7 @@
 #include "Arbeitszeit.h"
 
-Arbeitszeit::Arbeitszeit(Period& arbeitszeit)
-	: arbeitszeit(arbeitszeit) {}
+Arbeitszeit::Arbeitszeit(int id, Date day, int mitarbeiterId, Period& arbeitszeit)
+	: id(id), day(day), mitarbeiterId(mitarbeiterId), arbeitszeit(arbeitszeit) {}
 
 int Arbeitszeit::nettoMinutes() const {
 	int pauseMinutes = 0;

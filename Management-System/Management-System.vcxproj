@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="Arbeitszeit.cpp" />
     <ClCompile Include="Filialleiter.cpp" />
+    <ClCompile Include="Kassa.cpp" />
     <ClCompile Include="Management-System.cpp" />
     <ClCompile Include="Mitarbeiter.cpp" />
     <ClCompile Include="Pause.cpp" />
@@ -134,6 +135,7 @@
   <ItemGroup>
     <ClInclude Include="Arbeitszeit.h" />
     <ClInclude Include="Filialleiter.h" />
+    <ClInclude Include="Kassa.h" />
     <ClInclude Include="Mitarbeiter.h" />
     <ClInclude Include="Pause.h" />
     <ClInclude Include="Person.h" />
