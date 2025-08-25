@@ -13,6 +13,12 @@ struct Period {
 	Time end;
 };
 
+struct Date {
+	int day;
+	int month;
+	int year;
+};
+
 Time parseHHMM(const std::string& s); 
 int duration(const Period& p);
 

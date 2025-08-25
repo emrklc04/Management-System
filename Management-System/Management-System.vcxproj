@@ -123,15 +123,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Arbeitszeit.cpp" />
     <ClCompile Include="Filialleiter.cpp" />
     <ClCompile Include="Management-System.cpp" />
     <ClCompile Include="Mitarbeiter.cpp" />
+    <ClCompile Include="Pause.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="TimeUtil.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Arbeitszeit.h" />
     <ClInclude Include="Filialleiter.h" />
     <ClInclude Include="Mitarbeiter.h" />
+    <ClInclude Include="Pause.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="TimeUtil.h" />
   </ItemGroup>
